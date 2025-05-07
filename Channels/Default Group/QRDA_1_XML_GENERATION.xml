@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?><channel version="4.4.2">
+  <id>f3d2bb22-8af4-4d1c-b878-4ffe323f86d6</id>
+  <nextMetaDataId>2</nextMetaDataId>
+  <name>QRDA_1_XML_GENERATION</name>
+  <description/>
+  <revision>16</revision>
+  <sourceConnector version="4.4.2">
+    <metaDataId>0</metaDataId>
+    <name>sourceConnector</name>
+    <properties class="com.mirth.connect.connectors.vm.VmReceiverProperties" version="4.4.2">
+      <pluginProperties/>
+      <sourceConnectorProperties version="4.4.2">
+        <responseVariable>None</responseVariable>
+        <respondAfterProcessing>true</respondAfterProcessing>
+        <processBatch>false</processBatch>
+        <firstResponse>false</firstResponse>
+        <processingThreads>1</processingThreads>
+        <resourceIds class="linked-hash-map">
+          <entry>
+            <string>Default Resource</string>
+            <string>[Default Resource]</string>
+          </entry>
+        </resourceIds>
+        <queueBufferSize>1000</queueBufferSize>
+      </sourceConnectorProperties>
+    </properties>
+    <transformer version="4.4.2">
+      <elements>
+        <com.mirth.connect.plugins.javascriptstep.JavaScriptStep version="4.4.2">
+          <name>Channel Meta Data Setup</name>
+          <sequenceNumber>0</sequenceNumber>
+          <enabled>true</enabled>
+          <script msync-fileref="sourceConnector-transformer-step-0-Channel Meta Data Setup.js"/>
+        </com.mirth.connect.plugins.javascriptstep.JavaScriptStep>
+      </elements>
+      <inboundTemplate encoding="base64">ewogICJkb2N1bWVudElkIiA6ICIxMjNlNDU2Ny1lODliLTEyZDMtYTQ1Ni00MjY2MTQxNzQwMDAiLAogICJyZXBvcnRUaW1lIiA6ICIyMDI1MDQzMCIsCiAgIm1lYXN1cmVJZCI6IkNNUzE2NXYxMyIsCiAgInBhdGllbnQiIDogewogICAgImlkIiA6ICI5OTk5OTk5OTkiLAogICAgImZpcnN0TmFtZSIgOiAiSm9obiIsCiAgICAibGFzdE5hbWUiIDogIkRvZSIsCiAgICAiZ2VuZGVyIiA6ICJNIiwKICAgICJiaXJ0aFRpbWUiIDogIjE5ODAwMTAxIiwKICAgICJhZGRyZXNzIiA6IHsKICAgICAgInN0cmVldCIgOiAiMTIzIE1haW4gU3QiLAogICAgICAiY2l0eSIgOiAiVGlydWNoaXJhcGFsbGkiLAogICAgICAic3RhdGUiIDogIlROIiwKICAgICAgInBvc3RhbENvZGUiIDogIjYyMDAwMSIKICAgIH0KICB9LAogICJlbmNvdW50ZXIiIDogewogICAgImlkIiA6ICJlbmMtMDAxIiwKICAgICJkYXRlIiA6ICIyMDI1MDMwMSIsCiAgICAibG9jYXRpb24iIDogIkxvY2FsIENsaW5pYyIsCiAgICAidHlwZUNvZGUiIDogIjk5MjEzIgogIH0sCiAgImRpYWdub3NpcyIgOiB7CiAgICAiY29kZSIgOiAiRTExLjkiLAogICAgImRpc3BsYXkiIDogIlR5cGUgMiBkaWFiZXRlcyBtZWxsaXR1cyB3aXRob3V0IGNvbXBsaWNhdGlvbnMiLAogICAgImNvZGVTeXN0ZW0iIDogIjIuMTYuODQwLjEuMTEzODgzLjYuOTAiLAogICAgImRhdGUiIDogIjIwMjUwMzAxIgogIH0sCiAgImJsb29kUHJlc3N1cmUiOiB7CiAgICAiZGF0ZSI6ICIyMDI1MDMwMSIsCiAgICAic3lzdG9saWMiOiB7CiAgICAgICJ2YWx1ZSI6ICIxMzIiLAogICAgICAidW5pdCI6ICJtbVtIZ10iCiAgICB9LAogICAgImRpYXN0b2xpYyI6IHsKICAgICAgInZhbHVlIjogIjg1IiwKICAgICAgInVuaXQiOiAibW1bSGddIgogICAgfQogIH0sCiAgIm1lYXN1cmUiIDogewogICAgICJpZCI6ICJDTVMxNjV2MTMiLAogICAgInNldElkIjogIkNNUzE2NSIsCiAgICAidmVyc2lvbiI6ICIxMyIKICB9LAogICJyZXBvcnRpbmdQZXJpb2QiIDogewogICAgInN0YXJ0IiA6ICIyMDI0MDEwMSIsCiAgICAiZW5kIiA6ICIyMDI0MTIzMSIKICB9Cn0=</inboundTemplate>
+      <outboundTemplate encoding="base64"/>
+      <inboundDataType>JSON</inboundDataType>
+      <outboundDataType>JSON</outboundDataType>
+      <inboundProperties class="com.mirth.connect.plugins.datatypes.json.JSONDataTypeProperties" version="4.4.2">
+        <batchProperties class="com.mirth.connect.plugins.datatypes.json.JSONBatchProperties" version="4.4.2">
+          <splitType>JavaScript</splitType>
+          <batchScript/>
+        </batchProperties>
+      </inboundProperties>
+      <outboundProperties class="com.mirth.connect.plugins.datatypes.json.JSONDataTypeProperties" version="4.4.2">
+        <batchProperties class="com.mirth.connect.plugins.datatypes.json.JSONBatchProperties" version="4.4.2">
+          <splitType>JavaScript</splitType>
+          <batchScript/>
+        </batchProperties>
+      </outboundProperties>
+    </transformer>
+    <filter version="4.4.2">
+      <elements/>
+    </filter>
+    <transportName>Channel Reader</transportName>
+    <mode>SOURCE</mode>
+    <enabled>true</enabled>
+    <waitForPrevious>true</waitForPrevious>
+  </sourceConnector>
+  <destinationConnectors>
+    <connector version="4.4.2">
+      <metaDataId>1</metaDataId>
+      <name>QRDA 1 XML</name>
+      <properties class="com.mirth.connect.connectors.vm.VmDispatcherProperties" version="4.4.2">
+        <pluginProperties/>
+        <destinationConnectorProperties version="4.4.2">
+          <queueEnabled>false</queueEnabled>
+          <sendFirst>false</sendFirst>
+          <retryIntervalMillis>10000</retryIntervalMillis>
+          <regenerateTemplate>false</regenerateTemplate>
+          <retryCount>0</retryCount>
+          <rotate>false</rotate>
+          <includeFilterTransformer>false</includeFilterTransformer>
+          <threadCount>1</threadCount>
+          <threadAssignmentVariable/>
+          <validateResponse>false</validateResponse>
+          <resourceIds class="linked-hash-map">
+            <entry>
+              <string>Default Resource</string>
+              <string>[Default Resource]</string>
+            </entry>
+          </resourceIds>
+          <queueBufferSize>1000</queueBufferSize>
+          <reattachAttachments>true</reattachAttachments>
+        </destinationConnectorProperties>
+        <channelId>none</channelId>
+        <channelTemplate>${message.encodedData}</channelTemplate>
+        <mapVariables/>
+      </properties>
+      <transformer version="4.4.2">
+        <elements>
+          <com.mirth.connect.plugins.javascriptstep.JavaScriptStep version="4.4.2">
+            <name>Generate QRDA 1 XML</name>
+            <sequenceNumber>0</sequenceNumber>
+            <enabled>true</enabled>
+            <script msync-fileref="destinationConnector-QRDA 1 XML-transformer-step-0-Generate QRDA 1 XML.js"/>
+          </com.mirth.connect.plugins.javascriptstep.JavaScriptStep>
+        </elements>
+        <inboundTemplate encoding="base64"/>
+        <outboundTemplate encoding="base64"/>
+        <inboundDataType>JSON</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.json.JSONDataTypeProperties" version="4.4.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.json.JSONBatchProperties" version="4.4.2">
+            <splitType>JavaScript</splitType>
+            <batchScript/>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="4.4.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="4.4.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="4.4.2">
+            <splitType>Element_Name</splitType>
+            <elementName/>
+            <level>1</level>
+            <query/>
+            <batchScript/>
+          </batchProperties>
+        </outboundProperties>
+      </transformer>
+      <responseTransformer version="4.4.2">
+        <elements/>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="4.4.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="4.4.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="4.4.2">
+            <splitType>Element_Name</splitType>
+            <elementName/>
+            <level>1</level>
+            <query/>
+            <batchScript/>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="4.4.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="4.4.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="4.4.2">
+            <splitType>Element_Name</splitType>
+            <elementName/>
+            <level>1</level>
+            <query/>
+            <batchScript/>
+          </batchProperties>
+        </outboundProperties>
+      </responseTransformer>
+      <filter version="4.4.2">
+        <elements/>
+      </filter>
+      <transportName>Channel Writer</transportName>
+      <mode>DESTINATION</mode>
+      <enabled>true</enabled>
+      <waitForPrevious>true</waitForPrevious>
+    </connector>
+  </destinationConnectors>
+  <preprocessingScript msync-fileref="PreprocessingScript.js"/>
+  <postprocessingScript msync-fileref="PostprocessingScript.js"/>
+  <deployScript msync-fileref="DeployScript.js"/>
+  <undeployScript msync-fileref="UndeployScript.js"/>
+  <properties version="4.4.2">
+    <clearGlobalChannelMap>true</clearGlobalChannelMap>
+    <messageStorageMode>PRODUCTION</messageStorageMode>
+    <encryptData>false</encryptData>
+    <encryptAttachments>false</encryptAttachments>
+    <encryptCustomMetaData>false</encryptCustomMetaData>
+    <removeContentOnCompletion>false</removeContentOnCompletion>
+    <removeOnlyFilteredOnCompletion>false</removeOnlyFilteredOnCompletion>
+    <removeAttachmentsOnCompletion>false</removeAttachmentsOnCompletion>
+    <initialState>STARTED</initialState>
+    <storeAttachments>true</storeAttachments>
+    <metaDataColumns>
+      <metaDataColumn>
+        <name>CMS_MEASURE</name>
+        <type>STRING</type>
+        <mappingName>measure_id</mappingName>
+      </metaDataColumn>
+      <metaDataColumn>
+        <name>PATIENT_ID</name>
+        <type>STRING</type>
+        <mappingName>patient_id</mappingName>
+      </metaDataColumn>
+      <metaDataColumn>
+        <name>PATIENT_FIRST_NAME</name>
+        <type>STRING</type>
+        <mappingName>patient_first_name</mappingName>
+      </metaDataColumn>
+      <metaDataColumn>
+        <name>PATIENT_LAST_NAME</name>
+        <type>STRING</type>
+        <mappingName>patient_last_name</mappingName>
+      </metaDataColumn>
+    </metaDataColumns>
+    <attachmentProperties version="4.4.2">
+      <type>None</type>
+      <properties/>
+    </attachmentProperties>
+    <resourceIds class="linked-hash-map">
+      <entry>
+        <string>Default Resource</string>
+        <string>[Default Resource]</string>
+      </entry>
+    </resourceIds>
+  </properties>
+  <exportData>
+    <metadata>
+      <enabled>true</enabled>
+      <lastModified>
+        <time>1746435677815</time>
+        <timezone>Asia/Calcutta</timezone>
+      </lastModified>
+      <pruningSettings>
+        <pruneMetaDataDays>15</pruneMetaDataDays>
+        <pruneContentDays>15</pruneContentDays>
+        <archiveEnabled>true</archiveEnabled>
+        <pruneErroredMessages>true</pruneErroredMessages>
+      </pruningSettings>
+      <userId>1</userId>
+    </metadata>
+    <dependentIds/>
+    <dependencyIds/>
+    <channelTags>
+      <channelTag>
+        <id>25c1aa7f-0ee8-43f4-b571-b09820c0cb10</id>
+        <name>MOF</name>
+        <channelIds>
+          <string>b965d04d-3ac8-4d47-b67d-9576e8dbb776</string>
+          <string>f3d2bb22-8af4-4d1c-b878-4ffe323f86d6</string>
+          <string>b67053af-3e26-46da-988a-e984326e43f5</string>
+          <string>03c81227-baac-46a0-886f-d4a1a1e07d34</string>
+          <string>8c42b50b-f8b4-4b8e-a89e-a16cfc986a75</string>
+        </channelIds>
+        <backgroundColor>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+          <alpha>255</alpha>
+        </backgroundColor>
+      </channelTag>
+      <channelTag>
+        <id>0250829a-c575-45a5-8625-5779f5b6132e</id>
+        <name>CERTIFICATION</name>
+        <channelIds>
+          <string>b965d04d-3ac8-4d47-b67d-9576e8dbb776</string>
+          <string>f3d2bb22-8af4-4d1c-b878-4ffe323f86d6</string>
+          <string>b67053af-3e26-46da-988a-e984326e43f5</string>
+          <string>03c81227-baac-46a0-886f-d4a1a1e07d34</string>
+          <string>8c42b50b-f8b4-4b8e-a89e-a16cfc986a75</string>
+        </channelIds>
+        <backgroundColor>
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+          <alpha>255</alpha>
+        </backgroundColor>
+      </channelTag>
+    </channelTags>
+  </exportData>
+</channel>
