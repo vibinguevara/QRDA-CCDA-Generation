@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><codeTemplateLibrary version="4.4.2">
+  <id>1d0adaa9-ef80-4739-b99d-d54f8ce5fe73</id>
+  <name>CCDA GENERATION USING JSON (Direct Email)</name>
+  <revision>80</revision>
+  <lastModified>
+    <time>1748434150357</time>
+    <timezone>Etc/UTC</timezone>
+  </lastModified>
+  <description/>
+  <includeNewChannels>false</includeNewChannels>
+  <enabledChannelIds>
+    <string>f33a0f40-cc38-43e7-89b9-f93718e8c285</string>
+    <string>e75dd5ad-4d30-4703-b3c9-9bb8e7a694ef</string>
+    <string>23f08591-0423-45b1-8262-676705fab9b9</string>
+    <string>ee8f3a3c-77f5-4344-aba6-42679df27980</string>
+    <string>95da115d-5faf-4f34-ad97-a5586b2d0c1b</string>
+    <string>79a26f97-ff29-4ab3-96e0-ac69fa82ecaa</string>
+    <string>f80560c9-08c8-4a3e-9c17-549d2d253191</string>
+    <string>fec7146c-a152-4bda-9347-58c1188c19f9</string>
+    <string>77c89075-dbc3-4c7e-b2a9-0f830c6f578f</string>
+    <string>a8ebbf88-d6c9-48f2-9248-eda4e9823640</string>
+    <string>2fd5a52f-a56e-4037-868c-b8c6b344f3ec</string>
+    <string>8352eaf3-e37a-4f83-8626-285ed0ecdcf7</string>
+    <string>2f029829-10f9-4d74-92df-e27992326440</string>
+    <string>157cb1b5-c4cd-4db0-a0c9-e99ef84aacf3</string>
+    <string>26e0d893-8cc1-4104-b5d7-11e315d0c399</string>
+    <string>2a765874-c459-4b9d-8c3d-31c8d74acd5d</string>
+    <string>743ac5b1-87a4-4318-b02c-c9316772ff04</string>
+    <string>94f1f321-d106-4b67-9c88-d77e46460a68</string>
+    <string>2530c5cf-ffd5-486a-a183-afe05cdcde7c</string>
+    <string>ce53db42-a94a-40e4-8611-7026fee88cd7</string>
+    <string>c11b1179-c34c-4fe6-921b-8818c1ff643a</string>
+    <string>e48b5c8b-edf4-4084-bd3a-0c70b2502cae</string>
+    <string>9bb08217-d05d-434f-bd70-fe3062da7adb</string>
+    <string>6dba044b-88c2-46c7-a845-138a84e55ef7</string>
+    <string>15a2c3f2-4904-4822-84bf-63e7b1715a2b</string>
+    <string>6fc8762b-9525-46d7-bd30-964bd562fe1a</string>
+    <string>046a2384-1ff4-4daf-b51d-e338c0207dad</string>
+    <string>80f1f97b-2e75-46f9-ad11-54fd41c34c3b</string>
+    <string>9a885aaf-a3ae-4475-a36a-b93397c37ce4</string>
+    <string>d09a7c81-483d-43e5-8289-eee33270eff7</string>
+    <string>e12be0c8-f890-4de8-9347-7129b0859f4b</string>
+    <string>1cc61751-61fa-4626-8a4a-60d20e1d4306</string>
+    <string>a9d2e458-c18a-4d23-8a85-4efd3e892383</string>
+    <string>e31fd331-0a80-41b3-9971-afd75e1760c3</string>
+    <string>0af9486b-0c95-476e-bcb6-e3b3a02ce707</string>
+    <string>ee057e86-382b-4ed0-a322-9adfe98c3756</string>
+    <string>4fa56ee2-b150-4f69-92eb-dd93f5faf524</string>
+    <string>524972a1-c1d5-4bd6-b764-9a9d76376f27</string>
+    <string>06a2a6b8-2f15-43b8-88bb-01490cdcc73b</string>
+    <string>8c42b50b-f8b4-4b8e-a89e-a16cfc986a75</string>
+    <string>0a4a6834-ba84-4c61-a90b-64c1e3acacd1</string>
+    <string>d7710795-5379-464c-8df2-0f013b39a479</string>
+    <string>2302cbe7-5479-4dd2-bdfe-c28aa1d31cf4</string>
+    <string>6b5cfdd6-7480-4f16-b14d-5a26d2347190</string>
+    <string>471e2c44-b51e-484f-acfb-dc9e9db58002</string>
+    <string>48272823-93e2-4483-828f-01977ea58e6e</string>
+    <string>c57bbd77-4c9b-4eb2-906e-b73a3c716f77</string>
+    <string>1d83925b-7bb1-433f-94ca-29283b687067</string>
+    <string>ec25e3a0-dc58-4de6-a544-c55adf5cf6e6</string>
+    <string>161b48be-7834-441e-9543-0011e70569ad</string>
+    <string>f9ad024a-68ad-430a-a94e-164796426f13</string>
+    <string>240b6dc0-d504-4d03-8273-34d3e892bd5e</string>
+    <string>cc53b86c-39ba-4499-9223-1b34c9547c69</string>
+    <string>526eec5f-2dc9-47cf-82a5-b801ab95f470</string>
+  </enabledChannelIds>
+  <disabledChannelIds>
+    <string>42b14d6b-654e-4b8d-bfe2-e6cc657d82a3</string>
+    <string>e7a8abbb-31a2-45b7-ac9f-72bd47581afb</string>
+    <string>a82a4710-cecc-4ecc-94eb-86b8d2d3f5a2</string>
+    <string>a36a455b-4109-4982-b710-f525277d467a</string>
+    <string>ba2f1010-b176-459d-b38d-374492ca8db9</string>
+    <string>7c2c1690-7242-4b38-879e-a010f18bcb87</string>
+    <string>b9e60824-77d8-4d18-8fe4-45ba7b1ada2f</string>
+    <string>f7f002b3-f3e8-40ec-9fa7-2aca498f33da</string>
+    <string>3bf1d528-e167-410f-af91-708005e0bd83</string>
+    <string>6b30f1e6-081b-4893-a8e7-b0fc689748da</string>
+    <string>bfbc2dee-a499-42ec-b8a5-8951e0f5f12e</string>
+    <string>6575fd81-8715-49d9-9497-d7c6b900a0bf</string>
+    <string>2adac8df-99f8-42ff-b9e1-58513e9a5324</string>
+    <string>d9bf5a8b-050c-4916-83e6-ea06e1eba4d8</string>
+    <string>2c45b078-fd59-4954-a16e-6acb9f9262bd</string>
+    <string>7eec4606-7515-4af1-855a-94ee0f02913c</string>
+    <string>03c81227-baac-46a0-886f-d4a1a1e07d34</string>
+    <string>6566fb4f-da39-4a73-b257-7c1ce1878f43</string>
+    <string>fef6324c-c0a8-4b84-8d48-bf4062ddbd46</string>
+    <string>03d840a8-1cdf-42db-9683-b0cea79b80ec</string>
+    <string>db247d78-41f3-4aed-a8c1-979c1829fc91</string>
+    <string>d69b1b82-7f5a-4846-b768-87d4eb7f7d33</string>
+    <string>43b8fb60-c8f1-49db-8d33-9a7c8e0f75d6</string>
+    <string>e0acedc1-2eea-48a8-9e16-048b12ba0725</string>
+    <string>f54bd93e-2ca9-40ce-95cd-832dca4d74b6</string>
+    <string>74859e71-7209-4851-a1a4-83e05e3cabef</string>
+    <string>880550d7-1f56-4225-8bf3-61eb35373fb5</string>
+    <string>a88099ab-1c26-43e8-a90a-70c1a6a0fab1</string>
+    <string>0ef82c35-4eee-4262-ba04-19f80607d436</string>
+    <string>5ebcd332-d3e0-4d5c-9983-72b86950960e</string>
+    <string>0913d6e0-97b7-46d8-82a8-bd721a3f9834</string>
+    <string>9cb8a188-cf31-4213-b63d-9787c051e000</string>
+    <string>8eb0dc88-7272-4029-ace6-c99a54eadd1c</string>
+    <string>29db80b1-1cc4-4620-9cad-b267ab84b155</string>
+    <string>2c75fcfe-d963-40c3-9fbe-3fa4ef75f359</string>
+    <string>d0db227b-67cf-4146-bbaf-a996427a4d07</string>
+    <string>bc0b4142-c46c-40d1-82cd-a6b336a5a9ec</string>
+    <string>b1e835ee-de76-4a4c-9395-e5a04b9bf871</string>
+    <string>e10fcd7c-6b2a-4470-b888-93e87b9f961e</string>
+    <string>8a6254ba-4ae1-4295-a881-0fdf205c452a</string>
+    <string>20a1e009-00f6-48ac-939d-c1f30f719977</string>
+    <string>2c481869-25b5-46ac-a287-0ab970307656</string>
+    <string>b8484ce2-d5b1-462c-995c-5a6461e25100</string>
+    <string>b965d04d-3ac8-4d47-b67d-9576e8dbb776</string>
+    <string>de003f72-5180-4a45-8c36-34cc0a33741f</string>
+    <string>4f6f1e49-a9af-406f-87d7-1df29a752688</string>
+    <string>8e142318-ddc6-4854-8890-175a4a1584b7</string>
+    <string>a78e0bbd-28e6-4300-98c4-ebcb535f93c6</string>
+    <string>c4507efe-3308-419b-bc72-07d02270d0b4</string>
+    <string>3f3bc941-29a0-43fc-90c6-731857dce76e</string>
+    <string>c13c7832-f9b9-4532-ab69-03e4921bce51</string>
+    <string>119e3822-bee7-43f0-8e51-62d7be5be341</string>
+    <string>1f44cef4-56f8-4a87-9397-7dd5d9b00560</string>
+    <string>d28d5a20-0fca-4bd8-83ee-4e7e5e9dd5ac</string>
+    <string>0cf203b9-9910-43cf-b53e-6072d14be2bb</string>
+    <string>f0b297bf-2ffe-448f-903e-c01fdb89970f</string>
+    <string>892201d8-9fcd-4f94-84d2-0a888fce287b</string>
+    <string>480b7764-07c6-417a-be01-2b33e53dcd46</string>
+    <string>7c385514-2b43-47f2-a77b-ae1ecf25b47e</string>
+    <string>5f890dd5-e347-4545-8420-6c810f8c7953</string>
+    <string>f3d2bb22-8af4-4d1c-b878-4ffe323f86d6</string>
+    <string>0f0dbfb5-fbfa-481f-ae5e-6b9fb666a851</string>
+    <string>09bd8353-0b28-49c4-ab3d-3bbeddc839dd</string>
+    <string>00645859-9c9a-43db-bbf9-d99c94afe90b</string>
+    <string>d5133743-b44b-4b40-b553-3c83b1ac26af</string>
+    <string>1b6ada16-fdb4-4f40-ab8d-de7682b243e8</string>
+    <string>bd4bcf81-1bf6-44c7-84f5-71202a29630d</string>
+    <string>4783ce60-5c19-4107-b83f-92b8346457bd</string>
+    <string>dc9598a3-8c23-48bc-bf89-d6d2c4c5c9db</string>
+    <string>7182648f-7f3c-492a-bfd0-b30f13605ea7</string>
+    <string>f30b814d-6d60-4757-972a-d4573401df74</string>
+    <string>4de3cf84-16e9-496c-b6f3-f7bb7888dcf5</string>
+    <string>cdfff113-e774-41fb-8e64-7911a98ac322</string>
+    <string>f489fdc0-1380-40a2-b464-365829e06e6a</string>
+    <string>b67053af-3e26-46da-988a-e984326e43f5</string>
+    <string>4e5cf517-25dc-432a-b98c-2d758a38bca4</string>
+    <string>7fa81455-081b-4616-906b-038b6b9ae337</string>
+    <string>f08e23f2-42d0-4a73-a585-704314c574dc</string>
+    <string>b2b62b76-897c-4253-841c-96df5b062363</string>
+    <string>86993a87-77b8-47ec-b7a7-87794090bc42</string>
+    <string>aac797e0-153d-4e3c-a522-886b265e4530</string>
+    <string>2013a58f-1aaa-484d-91c2-3b253e65795c</string>
+    <string>4b55778b-7d76-45f4-9ac6-ef6d881318af</string>
+    <string>e186e675-a2df-46fe-b2f3-1a4a4750a332</string>
+    <string>288fa12b-f7dd-431b-875f-136c42d499dc</string>
+    <string>7c70e642-5ce5-4ce5-8751-5cb8870f7f3d</string>
+  </disabledChannelIds>
+  <codeTemplates>
+    <codeTemplate version="4.4.2">
+      <id>24590ba3-224c-4aa0-b40d-aa31963c917e</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>c81c3ab0-8407-406a-a03d-397a0fb517a7</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>fb4b3244-6a32-4f39-a268-e8067ad95000</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>1b66f635-6965-43e2-9517-02325e7534b6</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>54769e21-0d4a-403d-8a5b-fc322b6ddf97</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>a592086c-9b91-40cb-88ff-edd9eb8ba81e</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>1fe3bb38-7664-43e0-981a-bd3577081f0d</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>5ba982e8-56fa-4709-841f-fec72073764d</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>8b371dbd-e4c0-4e5d-9e8f-9bcb5f72dc11</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>1ff71f97-ed55-4cd9-afcd-2137de43efa3</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>8f19e4f8-f05e-499c-9900-e7a2b260e511</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>40536013-9b57-4e0a-816e-ef6eebc53a29</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>733195de-8fe0-4ee4-a69b-ae7b0e98cbd4</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>63c07bd6-ef29-42e8-b2aa-d9b9bb30d600</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>e3d99f1d-9679-411e-80bc-88320eedaf33</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>6d9c3b20-0eb6-4378-b6f7-6c27fccc0a29</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>3350f575-20af-4449-b0f7-aa7a400e3ee9</id>
+    </codeTemplate>
+  </codeTemplates>
+</codeTemplateLibrary>

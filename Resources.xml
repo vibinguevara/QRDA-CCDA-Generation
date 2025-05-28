@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><list>
+  <com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties version="4.4.2">
+    <pluginPointName>Directory Resource</pluginPointName>
+    <type>Directory</type>
+    <id>Default Resource</id>
+    <name>[Default Resource]</name>
+    <description>Loads libraries from the custom-lib folder in the Mirth Connect home directory.</description>
+    <includeWithGlobalScripts>true</includeWithGlobalScripts>
+    <loadParentFirst>false</loadParentFirst>
+    <directory>custom-lib</directory>
+    <directoryRecursion>true</directoryRecursion>
+  </com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties>
+  <com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties version="4.4.2">
+    <pluginPointName>Directory Resource</pluginPointName>
+    <type>Directory</type>
+    <id>2f85760c-2a60-44f1-83ae-0f1a485d6326</id>
+    <name>AUTOMATIC-BACKUP-ZIP</name>
+    <description/>
+    <includeWithGlobalScripts>true</includeWithGlobalScripts>
+    <loadParentFirst>false</loadParentFirst>
+    <directory>/opt/java-lib/</directory>
+    <directoryRecursion>true</directoryRecursion>
+  </com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties>
+  <com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties version="4.4.2">
+    <pluginPointName>Directory Resource</pluginPointName>
+    <type>Directory</type>
+    <id>3959be00-f7dd-446e-b665-c12ef8ce3d70</id>
+    <name>S3Operation</name>
+    <description/>
+    <includeWithGlobalScripts>false</includeWithGlobalScripts>
+    <loadParentFirst>false</loadParentFirst>
+    <directory>/opt/java-lib/aws-library/</directory>
+    <directoryRecursion>false</directoryRecursion>
+  </com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties>
+  <com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties version="4.4.2">
+    <pluginPointName>Directory Resource</pluginPointName>
+    <type>Directory</type>
+    <id>c79cbf92-4d1a-4117-8af8-942f8c7b7ffd</id>
+    <name>EMR-DIRECT-INTEGRATION</name>
+    <description/>
+    <includeWithGlobalScripts>false</includeWithGlobalScripts>
+    <loadParentFirst>false</loadParentFirst>
+    <directory>/opt/java-lib/emrdirect/</directory>
+    <directoryRecursion>true</directoryRecursion>
+  </com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties>
+  <com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties version="4.4.2">
+    <pluginPointName>Directory Resource</pluginPointName>
+    <type>Directory</type>
+    <id>a0d282af-8765-45df-af0f-bb9a34e10498</id>
+    <name>RTF</name>
+    <description/>
+    <includeWithGlobalScripts>false</includeWithGlobalScripts>
+    <loadParentFirst>false</loadParentFirst>
+    <directory>/opt/java-lib/rtf/</directory>
+    <directoryRecursion>true</directoryRecursion>
+  </com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties>
+  <com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties version="4.4.2">
+    <pluginPointName>Directory Resource</pluginPointName>
+    <type>Directory</type>
+    <id>2a71a309-0fdc-4afb-9933-7985e231fca2</id>
+    <name>CREATE-PDF-FROM-HTML</name>
+    <description/>
+    <includeWithGlobalScripts>false</includeWithGlobalScripts>
+    <loadParentFirst>false</loadParentFirst>
+    <directory>/opt/java-lib/html-pdf/</directory>
+    <directoryRecursion>true</directoryRecursion>
+  </com.mirth.connect.plugins.directoryresource.DirectoryResourceProperties>
+</list>

@@ -1,0 +1,1 @@
+channelMap.put('getImmunizationCCDA',createImmunizationSectionCCDA(msg))

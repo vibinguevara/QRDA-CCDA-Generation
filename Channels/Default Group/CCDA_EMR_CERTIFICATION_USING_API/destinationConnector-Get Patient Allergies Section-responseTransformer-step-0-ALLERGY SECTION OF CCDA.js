@@ -1,0 +1,1 @@
+channelMap.put('getAllergyCCDA',createAllergyIntoleranceSectionCCDA(msg));
