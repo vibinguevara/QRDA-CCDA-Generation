@@ -2,7 +2,7 @@
 channelMap.put('measure_id',msg['measureId']);
 
 // Patient ID
-channelMap.put('patient_id',msg['patient']['id']);
+channelMap.put('patient_id',msg['patient']['mrn']);
 
 // Patient First Name
 channelMap.put('patient_first_name',msg['patient']['firstName']);

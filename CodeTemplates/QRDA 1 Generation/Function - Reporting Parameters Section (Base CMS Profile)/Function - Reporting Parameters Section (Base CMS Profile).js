@@ -7,11 +7,12 @@ function generateReportingParams(period) {
                     <templateId extension="2016-03-01" root="2.16.840.1.113883.10.20.17.2.1.1"/>
                     <code code="55187-9" codeSystem="2.16.840.1.113883.6.1"/>
                     <title>Reporting Parameters</title>
-                    <entry>
+                    <text></text>
+                    <entry typeCode="DRIV">
                         <act classCode="ACT" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.17.3.8"/>
                             <templateId extension="2016-03-01" root="2.16.840.1.113883.10.20.17.3.8.1"/>
-                            <id root={generateGuid()}/>
+                            <id extension={generateGuid()} root="1.3.6.1.4.1.115"/>
                             <code code="252116004" codeSystem="2.16.840.1.113883.6.96"  displayName="Observation Parameters"/>
                             <effectiveTime>
                                 <low value={period.start}/>

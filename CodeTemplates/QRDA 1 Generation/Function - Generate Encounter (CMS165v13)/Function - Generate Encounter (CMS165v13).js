@@ -24,7 +24,7 @@ function generateEncounterData(patientEncounterData) {
 			encounter_class.appendChild(<text>{patientEncounterData[enc]['location']}</text>);
 			encounter_class.appendChild(<statusCode code="completed"/>);
 			<!-- QDM Attribute: Relevant Period -->
-			encounter_class.appendChild(<effectiveTime value={patientEncounterData[enc]['date']}/>);
+			encounter_class.appendChild(<effectiveTime><low value={patientEncounterData[enc]['date']}/><high nullFlavor='UNK'/></effectiveTime>)
 			encounter_data.appendChild(encounter_class);
 	}
 

@@ -15,10 +15,12 @@ function generateQRDA1(patientData, measuretype) {
     qrda.appendChild(<effectiveTime value={DateUtil.getCurrentDate('yyyyyMMddHHmmsss')}/>);
     qrda.appendChild(<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>);
     qrda.appendChild(<languageCode code="en"/>);
-
-    // Append Record Target Section
-    // Before <Component> Begins
+    // Generate Record Target Section
     qrda.appendChild(generatePatient(patientDataParsed.patient));
+    // Generate Author Section
+    qrda.appendChild(generateAuthorSection());
+    // Generate Custodian Section
+    qrda.appendChild(generateCustodian());
     var componentBody = (<component/>);
     var structuredBodyData = (<structuredBody/>);
     structuredBodyData.appendChild(generateMeasureSection(measuretype));

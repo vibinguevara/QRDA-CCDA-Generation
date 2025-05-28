@@ -1,0 +1,1 @@
+channelMap.put('getAssessmentSectionCCDA',generateAssessmentSection(msg));

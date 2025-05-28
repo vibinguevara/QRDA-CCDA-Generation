@@ -3,12 +3,20 @@
   <nextMetaDataId>2</nextMetaDataId>
   <name>QRDA_1_XML_GENERATION</name>
   <description/>
-  <revision>16</revision>
+  <revision>18</revision>
   <sourceConnector version="4.4.2">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
-    <properties class="com.mirth.connect.connectors.vm.VmReceiverProperties" version="4.4.2">
-      <pluginProperties/>
+    <properties class="com.mirth.connect.connectors.http.HttpReceiverProperties" version="4.4.2">
+      <pluginProperties>
+        <com.mirth.connect.plugins.httpauth.NoneHttpAuthProperties version="4.4.2">
+          <authType>NONE</authType>
+        </com.mirth.connect.plugins.httpauth.NoneHttpAuthProperties>
+      </pluginProperties>
+      <listenerConnectorProperties version="4.4.2">
+        <host>0.0.0.0</host>
+        <port>8999</port>
+      </listenerConnectorProperties>
       <sourceConnectorProperties version="4.4.2">
         <responseVariable>None</responseVariable>
         <respondAfterProcessing>true</respondAfterProcessing>
@@ -23,6 +31,21 @@
         </resourceIds>
         <queueBufferSize>1000</queueBufferSize>
       </sourceConnectorProperties>
+      <xmlBody>false</xmlBody>
+      <parseMultipart>true</parseMultipart>
+      <includeMetadata>false</includeMetadata>
+      <binaryMimeTypes>application/.*(?&lt;!json|xml)$|image/.*|video/.*|audio/.*</binaryMimeTypes>
+      <binaryMimeTypesRegex>true</binaryMimeTypesRegex>
+      <responseContentType>text/plain</responseContentType>
+      <responseDataTypeBinary>false</responseDataTypeBinary>
+      <responseStatusCode/>
+      <responseHeaders class="linked-hash-map"/>
+      <responseHeadersVariable/>
+      <useResponseHeadersVariable>false</useResponseHeadersVariable>
+      <charset>UTF-8</charset>
+      <contextPath/>
+      <timeout>30000</timeout>
+      <staticResources/>
     </properties>
     <transformer version="4.4.2">
       <elements>
@@ -33,7 +56,7 @@
           <script msync-fileref="sourceConnector-transformer-step-0-Channel Meta Data Setup.js"/>
         </com.mirth.connect.plugins.javascriptstep.JavaScriptStep>
       </elements>
-      <inboundTemplate encoding="base64">ewogICJkb2N1bWVudElkIiA6ICIxMjNlNDU2Ny1lODliLTEyZDMtYTQ1Ni00MjY2MTQxNzQwMDAiLAogICJyZXBvcnRUaW1lIiA6ICIyMDI1MDQzMCIsCiAgIm1lYXN1cmVJZCI6IkNNUzE2NXYxMyIsCiAgInBhdGllbnQiIDogewogICAgImlkIiA6ICI5OTk5OTk5OTkiLAogICAgImZpcnN0TmFtZSIgOiAiSm9obiIsCiAgICAibGFzdE5hbWUiIDogIkRvZSIsCiAgICAiZ2VuZGVyIiA6ICJNIiwKICAgICJiaXJ0aFRpbWUiIDogIjE5ODAwMTAxIiwKICAgICJhZGRyZXNzIiA6IHsKICAgICAgInN0cmVldCIgOiAiMTIzIE1haW4gU3QiLAogICAgICAiY2l0eSIgOiAiVGlydWNoaXJhcGFsbGkiLAogICAgICAic3RhdGUiIDogIlROIiwKICAgICAgInBvc3RhbENvZGUiIDogIjYyMDAwMSIKICAgIH0KICB9LAogICJlbmNvdW50ZXIiIDogewogICAgImlkIiA6ICJlbmMtMDAxIiwKICAgICJkYXRlIiA6ICIyMDI1MDMwMSIsCiAgICAibG9jYXRpb24iIDogIkxvY2FsIENsaW5pYyIsCiAgICAidHlwZUNvZGUiIDogIjk5MjEzIgogIH0sCiAgImRpYWdub3NpcyIgOiB7CiAgICAiY29kZSIgOiAiRTExLjkiLAogICAgImRpc3BsYXkiIDogIlR5cGUgMiBkaWFiZXRlcyBtZWxsaXR1cyB3aXRob3V0IGNvbXBsaWNhdGlvbnMiLAogICAgImNvZGVTeXN0ZW0iIDogIjIuMTYuODQwLjEuMTEzODgzLjYuOTAiLAogICAgImRhdGUiIDogIjIwMjUwMzAxIgogIH0sCiAgImJsb29kUHJlc3N1cmUiOiB7CiAgICAiZGF0ZSI6ICIyMDI1MDMwMSIsCiAgICAic3lzdG9saWMiOiB7CiAgICAgICJ2YWx1ZSI6ICIxMzIiLAogICAgICAidW5pdCI6ICJtbVtIZ10iCiAgICB9LAogICAgImRpYXN0b2xpYyI6IHsKICAgICAgInZhbHVlIjogIjg1IiwKICAgICAgInVuaXQiOiAibW1bSGddIgogICAgfQogIH0sCiAgIm1lYXN1cmUiIDogewogICAgICJpZCI6ICJDTVMxNjV2MTMiLAogICAgInNldElkIjogIkNNUzE2NSIsCiAgICAidmVyc2lvbiI6ICIxMyIKICB9LAogICJyZXBvcnRpbmdQZXJpb2QiIDogewogICAgInN0YXJ0IiA6ICIyMDI0MDEwMSIsCiAgICAiZW5kIiA6ICIyMDI0MTIzMSIKICB9Cn0=</inboundTemplate>
+      <inboundTemplate encoding="base64">ew0KICAiZG9jdW1lbnRJZCIgOiAiMTIzZTQ1NjctZTg5Yi0xMmQzLWE0NTYtNDI2NjE0MTc0MDAwIiwNCiAgInJlcG9ydFRpbWUiIDogIjIwMjUwNDMwIiwNCiAgIm1lYXN1cmVJZCIgOiAiQ01TMTY1djEzIiwNCiAgInBhdGllbnQiIDogew0KICAgICJtcm4iIDogIjY4MTg4YjY3ZjdkNGRmYTlkOWVkNDhmMyIsDQogICAgImh3c19pZCIgOiAiOUZFM0oyMFBYODYiLA0KICAgICJmaXJzdE5hbWUiIDogIkFtYW5kYSIsDQogICAgImxhc3ROYW1lIiA6ICJNYXkiLA0KICAgICJnZW5kZXIiIDogIkYiLA0KICAgICJiaXJ0aFRpbWUiIDogIjE5NTQwMjAzMDE1NjAwIiwNCiAgICAiYWRkcmVzcyIgOiB7DQogICAgICAic3RyZWV0IiA6ICI5MDIyMSBTY2htaXR0IFBpbmVzIFJhZGlhbCIsDQogICAgICAiY2l0eSIgOiAiU291dGggRnJhbmsiLA0KICAgICAgInN0YXRlIiA6ICJOSiIsDQogICAgICAicG9zdGFsQ29kZSIgOiAiMDc2ODciLA0KICAgICAgImNvdW50cnkiIDogIlVTIg0KICAgIH0sDQogICAgInJhY2VDb2RlIiA6ICIyMDc2LTgiLA0KICAgICJldGhuaWNDb2RlIiA6ICIyMTg2LTUiLA0KICAgICJwaG9uZU51bWJlciIgOiAiKDk4OSk0MDUtMjQzNyIsDQogICAgImVtYWlsSUQiIDogImFtYXk3MzI5QGV4YW1wbGUuY29tIg0KICB9LA0KICAicGF0aWVudERhdGEiIDogew0KICAgICJlbmNvdW50ZXIiIDogWw0KICAgICAgew0KICAgICAgICAiaWQiIDogImVuYy0wMDEiLA0KICAgICAgICAiZGF0ZSIgOiAiMjAyNTA1MDUwODAwMDAiLA0KICAgICAgICAibG9jYXRpb24iIDogIkxvY2FsIENsaW5pYyIsDQogICAgICAgICJ0eXBlQ29kZSIgOiAiOTkyMTMiDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiaWQiIDogImVuYy0wMDIiLA0KICAgICAgICAiZGF0ZSIgOiAiMjAyNTA1MDQwODAwMDAiLA0KICAgICAgICAibG9jYXRpb24iIDogIkxvY2FsIENsaW5pYyIsDQogICAgICAgICJ0eXBlQ29kZSIgOiAiOTkyMTMiDQogICAgICB9DQogICAgXSwNCiAgICAiZGlhZ25vc2lzIiA6IFsNCiAgICAgIHsNCiAgICAgICAgImNvZGUiIDogIkUxMS45IiwNCiAgICAgICAgImRpc3BsYXkiIDogIlR5cGUgMiBkaWFiZXRlcyBtZWxsaXR1cyB3aXRob3V0IGNvbXBsaWNhdGlvbnMiLA0KICAgICAgICAiY29kZVN5c3RlbSIgOiAiMi4xNi44NDAuMS4xMTM4ODMuNi45MCIsDQogICAgICAgICJkYXRlIiA6ICIyMDI1MDUwNDA4MDAwMCINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJjb2RlIiA6ICJJMTAiLA0KICAgICAgICAiZGlzcGxheSIgOiAiZXNzZW50aWFsIChwcmltYXJ5KSBoeXBlcnRlbnNpb24iLA0KICAgICAgICAiY29kZVN5c3RlbSIgOiAiMi4xNi44NDAuMS4xMTM4ODMuNi45MCIsDQogICAgICAgICJkYXRlIiA6ICIyMDI1MDUwNDA4MDAwMCINCiAgICAgIH0NCiAgICBdLA0KICAgICJibG9vZFByZXNzdXJlIiA6IHsNCiAgICAgICJkYXRlIiA6ICIyMDI1MDUwNDA4MDAwMCIsDQogICAgICAic3lzdG9saWMiIDogew0KICAgICAgICAidmFsdWUiIDogIjEzMiIsDQogICAgICAgICJ1bml0IiA6ICJtbVtIZ10iDQogICAgICB9LA0KICAgICAgImRpYXN0b2xpYyIgOiB7DQogICAgICAgICJ2YWx1ZSIgOiAiODUiLA0KICAgICAgICAidW5pdCIgOiAibW1bSGddIg0KICAgICAgfQ0KICAgIH0NCiAgfSwNCiAgIm1lYXN1cmUiIDogew0KICAgICJpZCIgOiAiQ01TMTY1djEzIiwNCiAgICAic2V0SWQiIDogIkNNUzE2NSIsDQogICAgInZlcnNpb24iIDogIjEzIg0KICB9LA0KICAicmVwb3J0aW5nUGVyaW9kIiA6IHsNCiAgICAic3RhcnQiIDogIjIwMjUwMTAxMDAwMDAwIiwNCiAgICAiZW5kIiA6ICIyMDI1MTIzMTIzNTk1OSINCiAgfQ0KfQ==</inboundTemplate>
       <outboundTemplate encoding="base64"/>
       <inboundDataType>JSON</inboundDataType>
       <outboundDataType>JSON</outboundDataType>
@@ -53,7 +76,7 @@
     <filter version="4.4.2">
       <elements/>
     </filter>
-    <transportName>Channel Reader</transportName>
+    <transportName>HTTP Listener</transportName>
     <mode>SOURCE</mode>
     <enabled>true</enabled>
     <waitForPrevious>true</waitForPrevious>
@@ -210,7 +233,7 @@
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1746435677815</time>
+        <time>1747113175870</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>

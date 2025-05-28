@@ -1,0 +1,1 @@
+channelMap.put('getVitalSectionCCDA',generateVitalSignsSection(msg));

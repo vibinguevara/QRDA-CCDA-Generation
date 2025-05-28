@@ -7,6 +7,7 @@ function generatePatientData(patientData,measureType) {
      generateSectionData.appendChild(<templateId root="2.16.840.1.113883.10.20.24.2.1.1" extension="2020-02-01"/>);
      generateSectionData.appendChild(<code code="55188-7" codeSystem="2.16.840.1.113883.6.1"/>);
      generateSectionData.appendChild(<title>Patient Data</title>);
+     generateSectionData.appendChild(<text/>);
      if(measureType=="CMS165v13"){
      	generateSectionData.appendChild(generateEncounterData(patientData.encounter));
      	generateSectionData.appendChild(generateDiagnosisData(patientData.diagnosis));

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><codeTemplate version="4.4.2">
   <id>b297c0be-b773-42c3-b6f6-a886bbece7f0</id>
   <name>Function -  Generate Author Section (Base CMS Profile)</name>
-  <revision>1</revision>
+  <revision>3</revision>
   <lastModified>
-    <time>1746591430227</time>
+    <time>1746596263545</time>
     <timezone>Etc/UTC</timezone>
   </lastModified>
   <contextSet>

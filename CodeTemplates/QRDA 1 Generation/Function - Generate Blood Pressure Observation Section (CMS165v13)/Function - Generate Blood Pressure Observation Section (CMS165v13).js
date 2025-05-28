@@ -6,8 +6,10 @@ function generateBloodPressureObservation(bp) {
                 <templateId root="2.16.840.1.113883.10.20.24.3.34"/>
                 <id root={generateGuid()}/>
                 <statusCode code="completed"/>
-                <effectiveTime value={bp.date}/>
-
+                <effectiveTime>
+	                <low value={bp.date}/>
+	                <high nullFlavor='UNK'/>
+                </effectiveTime>
                <!-- Systolic -->
                 <component>
                     <observation classCode="OBS" moodCode="EVN">
@@ -15,7 +17,10 @@ function generateBloodPressureObservation(bp) {
                         <id root={generateGuid()}/>
                         <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="Systolic blood pressure"/>
                         <statusCode code="completed"/>
-                        <effectiveTime value={bp.date}/>
+                         <effectiveTime>
+                        <low value={bp.date}/>
+                        <high nullFlavor='UNK'/>
+                        </effectiveTime>
                         <value type="PQ" value={bp.systolic.value} unit={bp.systolic.unit}/>
                     </observation>
                 </component>
@@ -27,7 +32,10 @@ function generateBloodPressureObservation(bp) {
                         <id root={generateGuid()}/>
                         <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diastolic blood pressure"/>
                         <statusCode code="completed"/>
-                        <effectiveTime value={bp.date}/>
+                        <effectiveTime>
+                        <low value={bp.date}/>
+                        <high nullFlavor='UNK'/>
+                        </effectiveTime>
                         <value type="PQ" value={bp.diastolic.value} unit={bp.diastolic.unit}/>
                     </observation>
                 </component>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><codeTemplate version="4.4.2">
+  <id>5ba982e8-56fa-4709-841f-fec72073764d</id>
+  <name>Create CCDA Medication Statement Section</name>
+  <revision>73</revision>
+  <lastModified>
+    <time>1748408298040</time>
+    <timezone>Etc/UTC</timezone>
+  </lastModified>
+  <contextSet>
+    <delegate>
+      <contextType>DESTINATION_DISPATCHER</contextType>
+      <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+      <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+      <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+      <contextType>SOURCE_RECEIVER</contextType>
+    </delegate>
+  </contextSet>
+  <properties class="com.mirth.connect.model.codetemplates.BasicCodeTemplateProperties">
+    <type>FUNCTION</type>
+    <code msync-fileref="Create CCDA Medication Statement Section.js"/>
+  </properties>
+</codeTemplate>

@@ -1,0 +1,1 @@
+channelMap.put('getEncounterCCDA',createEncounterSectionCCDA(msg));
